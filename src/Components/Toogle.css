@@ -1,0 +1,19 @@
+.Toggle{
+    display: flex;
+    justify-content: space-between;
+    border: 3px solid #FCA61F;
+    border-radius: 1rem;
+    position: relative;
+    padding: 2px;
+    cursor: pointer;
+}
+.Toggle>*{
+    width: 1rem;
+    height: 1rem;
+    color: #FCA61F; 
+}
+.toggleBTN{
+    border-radius: 100%;
+    background: #FCA61F;
+    position: absolute;
+}

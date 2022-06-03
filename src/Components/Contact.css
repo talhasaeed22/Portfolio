@@ -1,0 +1,13 @@
+.inp{
+    width: 20rem;
+    height: 2rem;
+    padding: 0.3rem;
+    outline: none;
+    
+    
+    font-size: 16px;
+}
+textarea{
+    height: 4rem!important;
+    
+}

@@ -3,12 +3,16 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import ModeState from '../../portfolio/src/Context/ModeState';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  <ModeState>
+
   <React.StrictMode>
     <App />
   </React.StrictMode>
+  </ModeState>
 );
 
 // If you want to start measuring performance in your app, pass a function
