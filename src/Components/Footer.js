@@ -10,7 +10,7 @@ const Footer = () => {
     <div id='footer' style={{ backgroundImage: `url(${mode === 'dark'? darkbg : background})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover', height: '70vh', margin: '-0.5rem -3.5rem', display: "flex", flexDirection: 'column' }}>
       <section>
         <div className="me-5 d-none d-lg-block">
-          <span style={{fontWeight: 'bold', fontSize: "1.5rem"}}>Get connected on social networks:</span>
+          <span style={{ color:'white' ,fontWeight: 'bold', fontSize: "1.5rem"}}>Get connected on social networks:</span>
         </div>
         <div style={{ display: 'flex', gap: '2rem', marginTop: "33px" }}>
           <a rel="noreferrer" target='_blank' href="https://www.facebook.com/talha.saeed.1023" >
@@ -37,7 +37,7 @@ const Footer = () => {
         <div className="container" style={{marginTop:'23px'}}>
 
             
-              <span style={{fontWeight: 'bold', fontSize: "2.5rem"}}>
+              <span style={{fontWeight: 'bold', color:'white', fontSize: "2.5rem"}}>
                 Contact
               </span>
               <p style={{color:'white',}}><i style={{color:'white', marginRight:"23px"}} className="fas fa-home me-3"></i>Soan Gardens, Islamabad, PK</p>

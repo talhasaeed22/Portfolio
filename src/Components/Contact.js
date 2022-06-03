@@ -2,6 +2,7 @@ import React, {useRef, useState, useContext} from 'react'
 import ModeContext from '../Context/ModeContext';
 import './Contact.css'
 import emailjs from '@emailjs/browser';
+import {motion} from 'framer-motion'
 const Contact = () => {
   const context = useContext(ModeContext);
   const {mode} = context
@@ -45,22 +46,22 @@ const Contact = () => {
       <div className="c-left" style={{display:'flex', flex:1, flexDirection:'column', gap: '1rem'}}>
         <span style={{ color: mode==='light'? '#242D49':'white', fontWeight: 'bold', fontSize: "2.5rem" }}>Get in Touch</span>
         <span style={{ color: '#FCA61F', fontWeight: 'bold', fontSize: "2.5rem" }}>Contact Me</span>
-        <div style={{ display: 'flex', gap: '2rem', marginTop: "33px" }}>
-          <a rel="noreferrer" target='_blank' href="https://www.facebook.com/talha.saeed.1023" className=" text-reset">
+        <div style={{ display: 'flex', gap: '2rem', marginTop:"33px" }}>
+          <motion.a transition={{ease:'easeInOut', duration:0.5}} whileHover={{scale:1.5, rotate:360, }} rel="noreferrer" target='_blank' href="https://www.facebook.com/talha.saeed.1023" className=" text-reset">
             <i style={{ color: '#FCA61F', fontSize: '1.8rem' }} className="fab fa-facebook-f"></i>
-          </a>
-          <a rel="noreferrer" target='_blank' href="https://twitter.com/?lang=en" className="me-4 text-reset">
+          </motion.a>
+          <motion.a transition={{ease:'easeInOut', duration:0.5}} whileHover={{scale:1.5, rotate:360, }}  rel="noreferrer" target='_blank' href="https://twitter.com/?lang=en" className="me-4 text-reset">
             <i style={{ color: '#FCA61F', fontSize: '1.8rem' }} className="fab fa-twitter"></i>
-          </a>
-          <a rel="noreferrer" target='_blank' href="https://www.instagram.com/talha_saeed2.2/" className=" text-reset">
+          </motion.a>
+          <motion.a transition={{ease:'easeInOut', duration:0.5}} whileHover={{scale:1.5, rotate:360, }}  rel="noreferrer" target='_blank' href="https://www.instagram.com/talha_saeed2.2/" className=" text-reset">
             <i style={{ color: '#FCA61F', fontSize: '1.8rem' }} className="fab fa-instagram"></i>
-          </a>
-          <a rel="noreferrer" target='_blank' href="https://www.linkedin.com/login" className=" text-reset">
+          </motion.a>
+          <motion.a  transition={{ease:'easeInOut', duration:0.5}} whileHover={{scale:1.5, rotate:360, }} rel="noreferrer" target='_blank' href="https://www.linkedin.com/login" className=" text-reset">
             <i style={{ color: '#FCA61F', fontSize: '1.8rem' }} className="fab fa-linkedin"></i>
-          </a>
-          <a rel="noreferrer" target='_blank' href="https://github.com/talhasaeed22" className=" text-reset">
+          </motion.a>
+          <motion.a transition={{ease:'easeInOut', duration:0.5}} whileHover={{scale:1.5, rotate:360, }} rel="noreferrer" target='_blank' href="https://github.com/talhasaeed22" className=" text-reset">
             <i style={{ color: '#FCA61F', fontSize: '1.8rem' }} className="fab fa-github"></i>
-          </a>
+          </motion.a>
         </div>
       </div>
 

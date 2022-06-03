@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react'
 import ModeContext from '../Context/ModeContext';
 import {Link} from 'react-scroll'
+import {motion} from 'framer-motion'
 
 import './Navbar.css'
 import Toggle from './Toggle';
@@ -38,7 +39,7 @@ const Navbar = () => {
     }
     return (
         <div id='Navbar'>
-            <div className='n-parent'  style={{ borderBottom: '1px solid #FCA61F', position:"fixed", top:'0px', width:'90%', zIndex:'1000000', backgroundColor:mode === 'dark' ? 'black': 'white'}}>
+            <motion.div initial={{y:-250}} animate={{y:-10}} transition={{delay:0.5, duration:1, type:'spring', stiffness:130}} className='n-parent'  style={{ borderBottom: '1px solid #FCA61F', position:"fixed", top:'0px', width:'90%', zIndex:'1000000', backgroundColor:mode === 'dark' ? 'black': 'white'}}>
                 <div className="n-left">
                     <div className="name" style={{ fontSize: '1.6rem', fontWeight: 'bolder' }}>
                         TalhaS
@@ -73,7 +74,7 @@ const Navbar = () => {
                         <span onClick={toggleHamburger} className="bar"></span>
                     </div>
                 </div>
-            </div>
+            </motion.div>
             <div id='toggleMenu'>
 
             </div>

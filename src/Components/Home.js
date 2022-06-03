@@ -11,7 +11,20 @@ import {motion} from 'framer-motion'
 
 
 const Home = () => {
-  const transition = {durartion:2, type:'spring'};
+  // const rotate = {
+  //   hover:{
+      
+  //     animate:{
+  //       scale:1.5,
+  //       rotate:360
+  //     },
+  //     transition:{
+  //       duration:2, 
+  //       ease:'easeInOut'
+  //     }
+  //   }
+  // }
+  const transition = {durartion:2, type:'spring', stiffness:300};
 
   const context = useContext(ModeContext);
   const {mode} = context
@@ -20,8 +33,8 @@ const Home = () => {
 
       <div className='h-left' style={{ display: 'flex', flexDirection: 'column', flex: 1, gap: '2rem' }}>
         <div className="h-name" style={{ display: 'flex', flexDirection: 'column' }}>
-          <span style={{ color: mode==='light'? '#242D49':'white', fontWeight: 'bold', fontSize: "3rem" }}>Hii! I Am</span>
-          <span style={{ color: '#FCA61F', fontWeight: 'bold', fontSize: "3rem" }}>M.Talha Saeed</span>
+          <motion.span initial={{x:'100vh'}} whileInView={{x:0}} animate={{fontSize:'3rem'}} style={{ color: mode==='light'? '#242D49':'white', fontWeight: 'bold', }}>Hii! I Am</motion.span>
+          <motion.span initial={{x:'100vh'}} whileInView={{x:0}} animate={{color: '#FCA61F'}}  transition={{type:'spring'}} style={{ fontWeight: 'bold', fontSize: "3rem" }}>M.Talha Saeed</motion.span>
           <p >Frontend Developer </p>
           <span style={{ fontWeight: '100', fontSize: '14px', color: mode==='light'? '#788097':'white', marginBottom: '10px' }}>I Create Stylish Frontend Websites. Also i have put some efforts in Mobile Application Development </span>
         </div>
@@ -30,21 +43,21 @@ const Home = () => {
           Hire Me
         </button>
         <div style={{ display: 'flex', gap: '2rem', marginTop:"33px" }}>
-          <a rel="noreferrer" target='_blank' href="https://www.facebook.com/talha.saeed.1023" className=" text-reset">
+          <motion.a transition={{ease:'easeInOut', duration:0.5}} whileHover={{scale:1.5, rotate:360, }} rel="noreferrer" target='_blank' href="https://www.facebook.com/talha.saeed.1023" className=" text-reset">
             <i style={{ color: '#FCA61F', fontSize: '1.8rem' }} className="fab fa-facebook-f"></i>
-          </a>
-          <a rel="noreferrer" target='_blank' href="https://twitter.com/?lang=en" className="me-4 text-reset">
+          </motion.a>
+          <motion.a transition={{ease:'easeInOut', duration:0.5}} whileHover={{scale:1.5, rotate:360, }}  rel="noreferrer" target='_blank' href="https://twitter.com/?lang=en" className="me-4 text-reset">
             <i style={{ color: '#FCA61F', fontSize: '1.8rem' }} className="fab fa-twitter"></i>
-          </a>
-          <a rel="noreferrer" target='_blank' href="https://www.instagram.com/talha_saeed2.2/" className=" text-reset">
+          </motion.a>
+          <motion.a transition={{ease:'easeInOut', duration:0.5}} whileHover={{scale:1.5, rotate:360, }}  rel="noreferrer" target='_blank' href="https://www.instagram.com/talha_saeed2.2/" className=" text-reset">
             <i style={{ color: '#FCA61F', fontSize: '1.8rem' }} className="fab fa-instagram"></i>
-          </a>
-          <a rel="noreferrer" target='_blank' href="https://www.linkedin.com/login" className=" text-reset">
+          </motion.a>
+          <motion.a  transition={{ease:'easeInOut', duration:0.5}} whileHover={{scale:1.5, rotate:360, }} rel="noreferrer" target='_blank' href="https://www.linkedin.com/login" className=" text-reset">
             <i style={{ color: '#FCA61F', fontSize: '1.8rem' }} className="fab fa-linkedin"></i>
-          </a>
-          <a rel="noreferrer" target='_blank' href="https://github.com/talhasaeed22" className=" text-reset">
+          </motion.a>
+          <motion.a transition={{ease:'easeInOut', duration:0.5}} whileHover={{scale:1.5, rotate:360, }} rel="noreferrer" target='_blank' href="https://github.com/talhasaeed22" className=" text-reset">
             <i style={{ color: '#FCA61F', fontSize: '1.8rem' }} className="fab fa-github"></i>
-          </a>
+          </motion.a>
         </div>
       </div>
       <div className="h-right" style={{ flex: 1, }}>
@@ -54,11 +67,11 @@ const Home = () => {
         <div style={{ position: 'relative', top: '-12%', right: "-20%" }}>
           <img src={rightImage} alt='mine' />
         </div>
-        <motion.div initial={{top:'-80%', left:'78%'}} whileInView={{left:'68%'}} transition={transition} style={{ position: 'relative', top: '-79%', right: '-59%'  }}>
+        <motion.div initial={{top:'-80%', left:'78%'}}  whileHover={{scale:1.1}} whileInView={{left:'68%'}} transition={transition} style={{ position: 'relative', top: '-79%', right: '-59%'  }}>
           <Floatingdiv image={web} text1='Web' text2='Developer' />
         </motion.div>
 
-        <motion.div initial={{top:'-37%', right:'-16%'}} whileInView={{left:'-2rem'}} transition={transition} style={{ position: 'relative', top: '-27%' }}>
+        <motion.div initial={{top:'-37%', right:'-16%'}}  whileHover={{scale:1.1}} whileInView={{left:'-2rem'}} transition={transition} style={{ position: 'relative', top: '-27%' }}>
           <Floatingdiv image={mobile} text1='MobileApp' text2='Developer' />
         </motion.div>
 
