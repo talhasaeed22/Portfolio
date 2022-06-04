@@ -46,7 +46,7 @@ const Portfolio = () => {
 
           <div className='fluid-text' style={{  display: 'flex', flexDirection: 'column', gap: '23px' }}>
             <span className='inside-text' style={{ color: 'white', fontWeight: 'bold',  }}>Calculator</span>
-            <span style={{ fontSize: '20px' }}> I Have created this Calculator App using React Native environment. This Calculator made your calculations easy </span>
+            <span style={{ fontSize: '20px' }}> I Have created this iCalculator App using React Native environment. Fully Frontend application having all the features an Iphone calculator have. </span>
           </div>
 
           <img className='p-img ' src={calculator} style={{  display: 'block', margin: 'auto', borderRadius: "23px" }} alt="" />
