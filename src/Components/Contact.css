@@ -7,7 +7,30 @@
     
     font-size: 16px;
 }
+.fab{
+    font-size: 1.8rem;
+}
 textarea{
     height: 4rem!important;
     
+}
+
+@media(max-width:1160px){
+    .c-parent{
+        flex-direction: column;
+        margin-top: 10%;
+    }
+    .c-right{
+        margin-top: 10%;
+    }
+
+}
+@media(max-width:460px){
+    .inp{
+        width: 15rem;
+    }
+    #c-icons i{
+        font-size: 1.2rem;
+    }
+
 }

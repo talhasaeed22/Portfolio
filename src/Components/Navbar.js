@@ -28,7 +28,7 @@ const Navbar = () => {
         navMenu.classList.toggle('active')
         if (toggleMenuBar === 'none') {
             toggleMenu.style.display = 'block'
-            toggleMenu.style.height = '15vh'
+            toggleMenu.style.height = '23vh'
             setToggleMenuBar('block')
         } else {
             toggleMenu.style.display = 'none'
@@ -39,10 +39,10 @@ const Navbar = () => {
     }
     return (
         <div id='Navbar'>
-            <motion.div initial={{y:-250}} animate={{y:-10}} transition={{delay:0.5, duration:1, type:'spring', stiffness:130}} className='n-parent'  style={{ borderBottom: '1px solid #FCA61F', position:"fixed", top:'0px', width:'90%', zIndex:'1000000', backgroundColor:mode === 'dark' ? 'black': 'white'}}>
+            <motion.div initial={{y:-250}} animate={{y:-10}} transition={{delay:0.5, duration:1, type:'spring', stiffness:130}} className='n-parent'  style={{ borderBottom: '1px solid #FCA61F', width:'100%', zIndex:'1000000', backgroundColor:mode === 'dark' ? 'black': 'white'}}>
                 <div className="n-left">
                     <div className="name" style={{ fontSize: '1.6rem', fontWeight: 'bolder' }}>
-                        TalhaS
+                        M.Talha
                     </div>
                     <div className="toggle">
                         <Toggle switchMode={switchMode} mode={mode}/>
@@ -75,7 +75,7 @@ const Navbar = () => {
                     </div>
                 </div>
             </motion.div>
-            <div id='toggleMenu'>
+            <div id='toggleMenu' style={{backgroundColor:'white', zIndex:'1000000'}}>
 
             </div>
         </div>

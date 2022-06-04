@@ -6,3 +6,26 @@
     gap: 2rem;
     
 }
+.s-right{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between
+}
+
+@media(max-width:1160px){
+    .s-parent{
+        flex-direction: column;
+        margin-top: 10%;
+    }
+    #left-cancel{
+        left:0
+    }
+
+}
+
+@media(max-width:637px){
+    .s-right{
+        flex-direction: column;
+        align-items: center;
+    }
+}

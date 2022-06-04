@@ -23,7 +23,7 @@ const Services = () => {
         <div className="blur" style={{backgrounColor:'#ABF1FF94'}}></div>
       </div>
 
-      <div className="s-right" style={{flex:1, display:'flex', justifyContent:"space-between", flexDirection:"row", gap:'1rem'}}>
+      <div className="s-right" style={{flex:1,   gap:'1rem'}}>
 
         <motion.div initial={{right:'-36%'}} whileInView={{left:'0%'}} transition={transition} style={{border:'7px solid rgba(255, 166, 31, 0.45)',  borderRadius:"20px", marginTop:'38%',height:'33vh', width:'16rem', position:"relative", background:'rgba(255, 255, 255, 0.26)'  }}>
           <Card pic={web} primaryText='Web' secondaryText="Development" tertiaryText="I Development Websites using latest technologies like React." />
@@ -33,12 +33,7 @@ const Services = () => {
           
           <Card pic={mobile} primaryText='MobileApp' secondaryText="Development" tertiaryText="I have some experience in developing a mobile application using React Native environment." />
         </motion.div>
-        <div  className='blur' style={{backgroundColor:'rgb(132 190 201)', top:'135%', right:'89%', width:"21rem", height:"11rem"}}>
 
-        </div>
-        <div className='blur' style={{backgroundColor:'rgb(255 210 193 / 45%)', top:'150%', left:'55%', width:"21rem", height:"11rem"}}>
-
-        </div>
         
       </div>  
     </div>

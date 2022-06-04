@@ -1,5 +1,5 @@
 .App{
-    padding: 0.5rem 3.5rem;
+    /* padding: 0.5rem 3.5rem; */
     overflow: hidden;
     
 }
@@ -14,4 +14,10 @@
   }
   body{
     margin: 0;
+  }
+
+  @media (max-width:1160px){
+    .App{
+      padding: 12px;
+    }
   }

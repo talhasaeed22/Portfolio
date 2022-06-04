@@ -42,25 +42,25 @@ const Contact = () => {
 
 
   return (
-    <div id='ContactMe' className='c-parent' style={{padding:"0 3rem 0 3rem", display:'flex', marginTop:'4rem'}}>
+    <div id='ContactMe' className='c-parent' style={{padding:"0 5rem 0 5rem", display:'flex', marginTop:'4rem'}}>
       <div className="c-left" style={{display:'flex', flex:1, flexDirection:'column', gap: '1rem'}}>
         <span style={{ color: mode==='light'? '#242D49':'white', fontWeight: 'bold', fontSize: "2.5rem" }}>Get in Touch</span>
         <span style={{ color: '#FCA61F', fontWeight: 'bold', fontSize: "2.5rem" }}>Contact Me</span>
         <div style={{ display: 'flex', gap: '2rem', marginTop:"33px" }}>
-          <motion.a transition={{ease:'easeInOut', duration:0.5}} whileHover={{scale:1.5, rotate:360, }} rel="noreferrer" target='_blank' href="https://www.facebook.com/talha.saeed.1023" className=" text-reset">
-            <i style={{ color: '#FCA61F', fontSize: '1.8rem' }} className="fab fa-facebook-f"></i>
+          <motion.a id='c-icons' transition={{ease:'easeInOut', duration:0.5}} whileHover={{scale:1.5, rotate:360, }} rel="noreferrer" target='_blank' href="https://www.facebook.com/talha.saeed.1023" className=" text-reset">
+            <i style={{ color: '#FCA61F',}} className="fab fa-facebook-f"></i>
           </motion.a>
-          <motion.a transition={{ease:'easeInOut', duration:0.5}} whileHover={{scale:1.5, rotate:360, }}  rel="noreferrer" target='_blank' href="https://twitter.com/?lang=en" className="me-4 text-reset">
-            <i style={{ color: '#FCA61F', fontSize: '1.8rem' }} className="fab fa-twitter"></i>
+          <motion.a id='c-icons' transition={{ease:'easeInOut', duration:0.5}} whileHover={{scale:1.5, rotate:360, }}  rel="noreferrer" target='_blank' href="https://twitter.com/?lang=en" className="me-4 text-reset">
+            <i style={{ color: '#FCA61F',}} className="fab fa-twitter"></i>
           </motion.a>
-          <motion.a transition={{ease:'easeInOut', duration:0.5}} whileHover={{scale:1.5, rotate:360, }}  rel="noreferrer" target='_blank' href="https://www.instagram.com/talha_saeed2.2/" className=" text-reset">
-            <i style={{ color: '#FCA61F', fontSize: '1.8rem' }} className="fab fa-instagram"></i>
+          <motion.a id='c-icons' transition={{ease:'easeInOut', duration:0.5}} whileHover={{scale:1.5, rotate:360, }}  rel="noreferrer" target='_blank' href="https://www.instagram.com/talha_saeed2.2/" className=" text-reset">
+            <i style={{ color: '#FCA61F',}} className="fab fa-instagram"></i>
           </motion.a>
-          <motion.a  transition={{ease:'easeInOut', duration:0.5}} whileHover={{scale:1.5, rotate:360, }} rel="noreferrer" target='_blank' href="https://www.linkedin.com/login" className=" text-reset">
-            <i style={{ color: '#FCA61F', fontSize: '1.8rem' }} className="fab fa-linkedin"></i>
+          <motion.a id='c-icons'  transition={{ease:'easeInOut', duration:0.5}} whileHover={{scale:1.5, rotate:360, }} rel="noreferrer" target='_blank' href="https://www.linkedin.com/login" className=" text-reset">
+            <i style={{ color: '#FCA61F',}} className="fab fa-linkedin"></i>
           </motion.a>
-          <motion.a transition={{ease:'easeInOut', duration:0.5}} whileHover={{scale:1.5, rotate:360, }} rel="noreferrer" target='_blank' href="https://github.com/talhasaeed22" className=" text-reset">
-            <i style={{ color: '#FCA61F', fontSize: '1.8rem' }} className="fab fa-github"></i>
+          <motion.a id='c-icons' transition={{ease:'easeInOut', duration:0.5}} whileHover={{scale:1.5, rotate:360, }} rel="noreferrer" target='_blank' href="https://github.com/talhasaeed22" className=" text-reset">
+            <i style={{ color: '#FCA61F',}} className="fab fa-github"></i>
           </motion.a>
         </div>
       </div>

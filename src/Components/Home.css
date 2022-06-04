@@ -1,6 +1,7 @@
 .h-parent{
     display: flex;
     margin-top: 6rem;
+    padding: 0.5rem 3.5rem;
 }
 
 .h-button{  
@@ -12,9 +13,41 @@
     width: 17rem;
     height: 10rem;
     border-radius: 50%;
-    background-color: #edd0ff;
+    /* background-color: #edd0ff; */
     filter: blur(90px);
     z-index: -9;
     top: 32%;
     right: 1%;
+}
+#img-fluid{
+    right: -20%;
+}
+#glassEmoji{
+    left: 0;
+}
+
+@media(max-width:1160px){
+    .h-parent{
+        flex-direction: column;
+    }
+    #cancel-blur{
+        display: none;
+    }
+    #img-fluid{
+        right:0;
+        margin:auto;
+        display: block;
+    }
+
+}
+@media(max-width:520px){
+    #img-fluid img{
+        
+        width: 300px;
+    }
+}
+@media(max-width:426px){
+    i{
+        font-size: 1rem;
+    }
 }

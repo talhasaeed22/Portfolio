@@ -3,11 +3,12 @@ import './App.css';
 import Home from './Components/Home'
 import Navbar from './Components/Navbar'
 import Services from './Components/Services';
-import Portfolio from './Components/Portfolio';
+
 import Contact from './Components/Contact';
 import Footer from './Components/Footer';
 
 import ModeContext from './Context/ModeContext';
+import NewPortfolio from './Components/NewPortfolio';
 const App = () => {
   const context = useContext(ModeContext);
   const {mode} = context
@@ -20,7 +21,8 @@ const App = () => {
         </div>
         <Home/>
         <Services/>
-        <Portfolio/>
+        {/* <Portfolio/> */}
+        <NewPortfolio/>
         <Contact/>
 
         <Footer/>

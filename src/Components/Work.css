@@ -1,0 +1,29 @@
+.w-img{
+    width:300px;
+}
+@media (max-width:805px){
+    .w-img{
+        width: 200px;
+    }
+
+}
+@media (max-width:650px){
+    .w-img{
+        width: 300px;
+    }
+    .w-left{
+        flex-direction: column;
+    }
+    .w-right{
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width:450px){
+    .w-img{
+        width: 250px;
+    }
+
+}
+

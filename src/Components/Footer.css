@@ -3,3 +3,86 @@ section{
     top: 27%;
     left: 20%;
 }
+#f-contact{
+    font-size: 2.5rem
+}
+#f-head{
+    font-size: 1.5rem;
+}
+#icons{
+    gap: 2rem
+}
+#icons i{
+    font-size: 1.8rem;
+}
+
+#footer{
+    background-repeat: no-repeat;
+    
+    background-size: cover;
+    background-position:center;
+    height: 70vh;
+    margin: -0.5rem -3.5rem;
+    display: flex;
+    flex-direction: column 
+}
+
+@media(max-width:1256px){
+    #f-contact{
+        font-size: 2.1rem
+    }
+    #f-head{
+        font-size: 1.1rem;
+    }
+    
+    
+}
+@media(max-width:1010px){
+    #f-contact{
+        font-size: 1.5rem
+    }
+    #f-head{
+        font-size: 1rem;
+    }
+    #icons i{
+        font-size: 1rem;
+    }
+    #icons{
+        gap: 1rem
+    }
+    
+    
+}
+
+@media (max-width:960px) {
+    #footer{
+        height: 90vh;
+    }
+    section{
+        margin-top: 12%;
+    }
+}
+
+@media (max-width:522px) {
+    section{
+        left: 12%;
+        top: 37%;
+    }
+}
+
+@media(max-width:650px){
+    #f-contact{
+        font-size: 1.5rem
+    }
+    #f-head{
+        font-size: 1rem;
+    }
+    #icons i{
+        font-size: 1rem;
+    }
+    #icons{
+        gap: 1rem
+    }
+    
+    
+}
