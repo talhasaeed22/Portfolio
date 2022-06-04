@@ -19,7 +19,7 @@ const Services = () => {
         <span className='p-heading' style={{ color: mode==='light'? '#242D49':'white', fontWeight: 'bold',  }}>My Services</span>
         <span className='p-heading' style={{ color: '#FCA61F', fontWeight: 'bold',  }}>What I Do</span>
         <span style={{ fontWeight: '100', fontSize: '14px', color: mode==='light'? '#788097':'white', marginBottom: '10px' }}>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae sit iure nam, at quas, sequi tempora porro omnis repellendus molestiae dolorem nulla iusto a quisquam, natus ipsa aut delectus soluta.</span>
-        <a href={CV} download><button className="button" style={{width:'8rem', height:'2rem'}}>View CV</button></a>
+        <a href={CV} download><motion.button whileHover={{scale:1.5}} transition={{type:'spring', stiffness:'500'}} className="button" style={{width:'8rem', height:'2rem'}}>View CV</motion.button></a>
         <div className="blur" style={{backgrounColor:'#ABF1FF94'}}></div>
       </div>
 

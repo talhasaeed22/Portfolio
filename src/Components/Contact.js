@@ -71,7 +71,7 @@ const Contact = () => {
           placeholder='Name' />
           <input value={data.user_email} onChange={onChange} style={mode === 'light'? {border:'2px solid #FCA61F', borderRadius: '8px'}: {border:"none", color:'white', borderBottom:'2px solid #FCA61F', background:'transparent'}} className='inp' type="email" name="user_email" id="email" placeholder='Email' />
           <textarea onChange={onChange} value={data.message} style={mode === 'light'? {border:'2px solid #FCA61F', borderRadius: '8px'}: {border:"none", color:'white', borderBottom:'2px solid #FCA61F', background:'transparent'}} className='inp' type="text" name="message" id="name" placeholder='Message' />
-          <input  type="submit" value='Send' className='button' />
+          <motion.input whileHover={{scale:1.5}} transition={{type:'spring', stiffness:'500'}}  type="submit" value='Send' className='button' />
           <span style={{color:'#FCA61F'}}>{send}</span>
         </form>
       </div>
