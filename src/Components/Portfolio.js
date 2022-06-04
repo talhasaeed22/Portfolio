@@ -19,7 +19,7 @@ const Portfolio = () => {
 
       <div className="top" style={{ gap: '2rem', display: "flex", margin: "5rem 0rem" }}>
 
-        <div className="left" style={{ border: '1px solid red', backgroundImage: "linear-gradient(to right bottom, rgb(49 166 255), rgb(247 227 227))", flex: 1, padding: '23px', height: '50vh', display: 'flex', flexDirection: 'column', gap: '2rem' }}>
+        <div className="left" style={{  backgroundImage: "linear-gradient(to right bottom, rgb(49 166 255), rgb(247 227 227))", flex: 1, padding: '23px', height: '50vh', display: 'flex', flexDirection: 'column', gap: '2rem' }}>
 
           <div  style={{ width: '60%', display: 'flex', flexDirection: 'column', gap: '23px' }}>
             <span className='inside-text' style={{ color: 'white', fontWeight: 'bold',  }}>iNotebook</span>
@@ -29,7 +29,7 @@ const Portfolio = () => {
           <img className='t-img' src={notebook} style={{ }} alt="" />
         </div>
 
-        <div className="right mobile" style={{ border: '1px solid red', backgroundImage: 'linear-gradient(175deg, #ff7847, #ffac8e)', flex: 1, padding: '23px', display: 'flex', height: '60vh', gap: '2rem' }}>
+        <div className="right mobile" style={{  backgroundImage: 'linear-gradient(175deg, #ff7847, #ffac8e)', flex: 1, padding: '23px', display: 'flex', height: '60vh', gap: '2rem' }}>
 
           <div className='fluid-text' style={{  display: 'flex', flexDirection: 'column', gap: '23px' }}>
             <span className='inside-text' style={{ color: 'white', fontWeight: 'bold',  }}>Melophile</span>
@@ -42,7 +42,7 @@ const Portfolio = () => {
       </div>
       <hr />
       <div className="bottom" style={{ gap: '2rem', display: "flex", margin: "5rem 0rem" }}>
-        <div className="left mobile" style={{ border: '1px solid red', backgroundImage: 'linear-gradient(330deg, #ffe596, #ffbf00)', flex: 1, padding: '23px', display: 'flex', height: '60vh', gap: '2rem' }}>
+        <div className="left mobile" style={{  backgroundImage: 'linear-gradient(330deg, #ffe596, #ffbf00)', flex: 1, padding: '23px', display: 'flex', height: '60vh', gap: '2rem' }}>
 
           <div className='fluid-text' style={{  display: 'flex', flexDirection: 'column', gap: '23px' }}>
             <span className='inside-text' style={{ color: 'white', fontWeight: 'bold',  }}>Calculator</span>
@@ -52,7 +52,7 @@ const Portfolio = () => {
           <img className='p-img ' src={calculator} style={{  display: 'block', margin: 'auto', borderRadius: "23px" }} alt="" />
 
         </div>
-        <div className="right" style={{ border: '1px solid red', backgroundImage: "linear-gradient(311deg, #766ced, #413ad6)", flex: 1, padding: '23px', height: '50vh', display: 'flex', flexDirection: 'column', gap: '2rem' }}>
+        <div className="right" style={{  backgroundImage: "linear-gradient(311deg, #766ced, #413ad6)", flex: 1, padding: '23px', height: '50vh', display: 'flex', flexDirection: 'column', gap: '2rem' }}>
 
           <div className='fluid-text' style={{  display: 'flex', flexDirection: 'column', gap: '23px' }}>
             <span className='inside-text' style={{ color: 'white', fontWeight: 'bold',  }}>iNotebook</span>
