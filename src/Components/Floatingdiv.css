@@ -1,0 +1,9 @@
+.floatingDiv{
+    width: 30%;
+}
+@media(max-width:426px){
+    .floatingDiv{
+        width: 90%;
+        margin-bottom: 12px;
+    }
+}

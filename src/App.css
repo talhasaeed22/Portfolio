@@ -3,6 +3,9 @@
     overflow: hidden;
     
 }
+.p-heading{
+  font-size: 2.5rem;
+}
 @font-face {
     font-family: Gumela;
     src: url('./Fonts/Gumela\ Regular.otf');
@@ -19,5 +22,10 @@
   @media (max-width:1160px){
     .App{
       padding: 12px;
+    }
+  }
+  @media (max-width:340px){
+    .p-heading{
+        font-size: 2rem;
     }
   }

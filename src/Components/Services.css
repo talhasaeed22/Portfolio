@@ -1,5 +1,5 @@
 .s-parent{
-    padding: 0 3rem 0 3rem;
+    padding: 3rem 3rem 3rem 3rem;
     display: flex;
     /* height: 90vh; */
     margin-bottom: 13 rem;
@@ -10,6 +10,9 @@
     display:flex;
     flex-direction: row;
     justify-content:space-between
+}
+.motion-div{
+    width: 16rem;
 }
 
 @media(max-width:1160px){
@@ -23,9 +26,22 @@
 
 }
 
+@media (max-width:890px) {
+    .s-parent{
+        
+        padding: 0 12px 0 12px;
+    }
+}
+
 @media(max-width:637px){
     .s-right{
         flex-direction: column;
         align-items: center;
+    }
+}
+
+@media(max-width:350px){
+    .motion-div{
+        width: 11rem;
     }
 }

@@ -42,11 +42,11 @@ const Contact = () => {
 
 
   return (
-    <div id='ContactMe' className='c-parent' style={{padding:"0 5rem 0 5rem", display:'flex', marginTop:'4rem'}}>
+    <div id='ContactMe' className='c-parent' style={{ display:'flex', marginTop:'4rem'}}>
       <div className="c-left" style={{display:'flex', flex:1, flexDirection:'column', gap: '1rem'}}>
-        <span style={{ color: mode==='light'? '#242D49':'white', fontWeight: 'bold', fontSize: "2.5rem" }}>Get in Touch</span>
-        <span style={{ color: '#FCA61F', fontWeight: 'bold', fontSize: "2.5rem" }}>Contact Me</span>
-        <div style={{ display: 'flex', gap: '2rem', marginTop:"33px" }}>
+        <span className='p-heading' style={{ color: mode==='light'? '#242D49':'white', fontWeight: 'bold',  }}>Get in Touch</span>
+        <span className='p-heading' style={{ color: '#FCA61F', fontWeight: 'bold',  }}>Contact Me</span>
+        <div id='icon-gap' style={{ display: 'flex', marginTop:"33px" }}>
           <motion.a id='c-icons' transition={{ease:'easeInOut', duration:0.5}} whileHover={{scale:1.5, rotate:360, }} rel="noreferrer" target='_blank' href="https://www.facebook.com/talha.saeed.1023" className=" text-reset">
             <i style={{ color: '#FCA61F',}} className="fab fa-facebook-f"></i>
           </motion.a>

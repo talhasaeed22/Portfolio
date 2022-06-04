@@ -40,12 +40,12 @@ const Footer = () => {
               <span id='f-contact' style={{fontWeight: 'bold', color:'white', }}>
                 Contact
               </span>
-              <p style={{color:'white',}}><i style={{color:'white', marginRight:"23px"}} className="fas fa-home me-3"></i>Soan Gardens, Islamabad, PK</p>
-              <p style={{color:'white'}}>
+              <p id='f-p' style={{color:'white',}}><i style={{color:'white', marginRight:"23px"}} className="fas fa-home me-3"></i>Soan Gardens, Islamabad, PK</p>
+              <p id='f-p' style={{color:'white'}}>
                 <i style={{color:'white', marginRight:"23px"}} className="fas fa-envelope me-3"></i>
                 talhasaeed100@gmail.com
               </p>
-              <p style={{color:'white'}}><i style={{color:'white', marginRight:"23px"}} className="fas fa-phone me-3"></i>+923319838411</p>
+              <p id='f-p' style={{color:'white'}}><i style={{color:'white', marginRight:"23px"}} className="fas fa-phone me-3"></i>+923319838411</p>
 
         
         </div>

@@ -31,8 +31,8 @@ const Home = () => {
   return (
     <div className='h-parent'>
 
-      <div className='h-left' style={{ display: 'flex', flexDirection: 'column', flex: 1, gap: '2rem' }}>
-        <div className="h-name" style={{ display: 'flex', flexDirection: 'column' }}>
+      <div className='h-left p-heading' style={{ display: 'flex', flexDirection: 'column', flex: 1, gap: '2rem' }}>
+        <div className="h-name p-heading" style={{ display: 'flex', flexDirection: 'column' }}>
           <motion.span animate={{ fontSize: '3rem' }} style={{ color: mode === 'light' ? '#242D49' : 'white', fontWeight: 'bold', }}>Hii! I Am</motion.span>
           <motion.span initial={{ x: -160 }} whileInView={{ x: 0 }} animate={{ color: '#FCA61F' }} transition={{ type: 'spring' }} style={{ fontWeight: 'bold', fontSize: "3rem" }}>M.Talha Saeed</motion.span>
           <div>
@@ -49,21 +49,21 @@ const Home = () => {
         <button style={{ marginTop: '15px' }} className="button h-button">
           Hire Me
         </button>
-        <div style={{ display: 'flex', gap: '2rem', marginTop: "33px" }}>
+        <div id='h-icons' style={{ display: 'flex', marginTop: "33px" }}>
           <motion.a transition={{ ease: 'easeInOut', duration: 0.5 }} whileHover={{ scale: 1.5, rotate: 360, }} rel="noreferrer" target='_blank' href="https://www.facebook.com/talha.saeed.1023" className=" text-reset">
-            <i style={{ color: '#FCA61F', fontSize: '1.8rem' }} className="fab fa-facebook-f"></i>
+            <i style={{ color: '#FCA61F', }} className="fab fa-facebook-f"></i>
           </motion.a>
           <motion.a transition={{ ease: 'easeInOut', duration: 0.5 }} whileHover={{ scale: 1.5, rotate: 360, }} rel="noreferrer" target='_blank' href="https://twitter.com/?lang=en" className="me-4 text-reset">
-            <i style={{ color: '#FCA61F', fontSize: '1.8rem' }} className="fab fa-twitter"></i>
+            <i style={{ color: '#FCA61F', }} className="fab fa-twitter"></i>
           </motion.a>
           <motion.a transition={{ ease: 'easeInOut', duration: 0.5 }} whileHover={{ scale: 1.5, rotate: 360, }} rel="noreferrer" target='_blank' href="https://www.instagram.com/talha_saeed2.2/" className=" text-reset">
-            <i style={{ color: '#FCA61F', fontSize: '1.8rem' }} className="fab fa-instagram"></i>
+            <i style={{ color: '#FCA61F', }} className="fab fa-instagram"></i>
           </motion.a>
           <motion.a transition={{ ease: 'easeInOut', duration: 0.5 }} whileHover={{ scale: 1.5, rotate: 360, }} rel="noreferrer" target='_blank' href="https://www.linkedin.com/login" className=" text-reset">
-            <i style={{ color: '#FCA61F', fontSize: '1.8rem' }} className="fab fa-linkedin"></i>
+            <i style={{ color: '#FCA61F', }} className="fab fa-linkedin"></i>
           </motion.a>
           <motion.a transition={{ ease: 'easeInOut', duration: 0.5 }} whileHover={{ scale: 1.5, rotate: 360, }} rel="noreferrer" target='_blank' href="https://github.com/talhasaeed22" className=" text-reset">
-            <i style={{ color: '#FCA61F', fontSize: '1.8rem' }} className="fab fa-github"></i>
+            <i style={{ color: '#FCA61F', }} className="fab fa-github"></i>
           </motion.a>
         </div>
       </div>
@@ -74,11 +74,11 @@ const Home = () => {
         <div id='img-fluid' style={{ position: 'relative', top: '-12%', }}>
           <img src={rightImage} alt='mine' />
         </div>
-        <motion.div initial={{ top: '-80%', left: '78%' }} whileHover={{ scale: 1.1 }} whileInView={{ left: '68%' }} transition={transition} style={{ position: 'relative', top: '-79%', right: '-59%' }}>
+        <motion.div className='f-divs' initial={{ top: '-80%', left: '78%' }} whileHover={{ scale: 1.1 }} whileInView={{ left: '68%' }} transition={transition} style={{  top: '-79%', right: '-59%' }}>
           <Floatingdiv image={web} text1='Web' text2='Developer' />
         </motion.div>
 
-        <motion.div initial={{ top: '-37%', right: '-16%' }} whileHover={{ scale: 1.1 }} whileInView={{ left: '-2rem' }} transition={transition} style={{ position: 'relative', top: '-27%' }}>
+        <motion.div className='f-divs' initial={{ top: '-37%', right: '-16%' }} whileHover={{ scale: 1.1 }} whileInView={{ left: '-2rem' }} transition={transition} style={{  top: '-27%' }}>
           <Floatingdiv image={mobile} text1='MobileApp' text2='Developer' />
         </motion.div>
 

@@ -1,0 +1,11 @@
+.card{
+    padding:10px;
+    gap:0.3rem
+}
+
+@media(max-width:350px){
+    .card{
+        padding: 0;
+        gap: 0;
+    }
+}

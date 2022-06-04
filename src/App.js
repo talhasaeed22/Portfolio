@@ -6,9 +6,8 @@ import Services from './Components/Services';
 
 import Contact from './Components/Contact';
 import Footer from './Components/Footer';
-
+import Portfolio from './Components/Portfolio'
 import ModeContext from './Context/ModeContext';
-import NewPortfolio from './Components/NewPortfolio';
 const App = () => {
   const context = useContext(ModeContext);
   const {mode} = context
@@ -21,8 +20,8 @@ const App = () => {
         </div>
         <Home/>
         <Services/>
-        {/* <Portfolio/> */}
-        <NewPortfolio/>
+        <Portfolio/>
+  
         <Contact/>
 
         <Footer/>

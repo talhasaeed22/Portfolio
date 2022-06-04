@@ -1,10 +1,11 @@
 import React, {useContext} from 'react'
 import ModeContext from '../Context/ModeContext';
+import './Card.css'
 const Card = (props) => {
   const context = useContext(ModeContext)
     const {mode} = context
   return (
-    <div style={{padding:'10px',  display:'flex', flexDirection:'column', gap:'0.3rem', }}>
+    <div className='card' style={{  display:'flex', flexDirection:'column',  }}>
         
             <img style={{width:'80px', height:'80px', display:'block', margin:'auto'}} src={props.pic} alt="" />
             <span style={{color: mode==='light'? '#242D49':'white', fontSize:"25px", fontWeight:'bold', textAlign:'center', marginTop:'6px'}}> {props.primaryText} </span>
