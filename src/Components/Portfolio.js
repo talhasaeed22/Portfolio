@@ -17,9 +17,9 @@ const Portfolio = () => {
         <span className='p-heading' style={{ color: '#FCA61F', fontWeight: 'bold',  }}>My Work</span>
       </div>
 
-      <motion.div initial={{x:-260}} whileInView={{x:0}} transition={{type:'spring', stiffness:400}} className="top" style={{ gap: '2rem', display: "flex", margin: "5rem 0rem" }}>
+      <div className="top" style={{ gap: '2rem', display: "flex", margin: "5rem 0rem" }}>
 
-        <div className="left" style={{  backgroundImage: "linear-gradient(to right bottom, rgb(49 166 255), rgb(247 227 227))", flex: 1, padding: '23px', height: '50vh', display: 'flex', flexDirection: 'column', gap: '2rem' }}>
+        <motion.div initial={{x:-260}} whileInView={{x:0}} transition={{type:'spring', stiffness:400}} className="left" style={{  backgroundImage: "linear-gradient(to right bottom, rgb(49 166 255), rgb(247 227 227))", flex: 1, padding: '23px', height: '50vh', display: 'flex', flexDirection: 'column', gap: '2rem' }}>
 
           <div  style={{ width: '60%', display: 'flex', flexDirection: 'column', gap: '23px' }}>
             <span className='inside-text' style={{ color: 'black', fontWeight: 'bold',  }}>iNotebook</span>
@@ -27,9 +27,9 @@ const Portfolio = () => {
           </div>
 
           <img className='t-img' src={notebook} style={{ }} alt="" />
-        </div>
+        </motion.div>
 
-        <div className="right mobile" style={{  backgroundImage: 'linear-gradient(175deg, #ff7847, #ffac8e)', flex: 1, padding: '23px', display: 'flex', height: '60vh', gap: '2rem' }}>
+        <motion.div initial={{x:260}} whileInView={{x:0}} transition={{type:'spring', stiffness:400}} className="right mobile" style={{  backgroundImage: 'linear-gradient(175deg, #ff7847, #ffac8e)', flex: 1, padding: '23px', display: 'flex', height: '60vh', gap: '2rem' }}>
  
           <div className='fluid-text' style={{  display: 'flex', flexDirection: 'column', gap: '23px' }}>
             <span className='inside-text' style={{ color: 'black', fontWeight: 'bold',  }}>Melophile</span>
@@ -38,11 +38,11 @@ const Portfolio = () => {
 
           <img className='p-img mobile' src={player} style={{  display: 'block', margin: 'auto', borderRadius: "23px" }} alt="" />
 
-        </div>
-      </motion.div>
+        </motion.div>
+      </div>
       <hr />
-      <motion.div initial={{x:260}} whileInView={{x:0}} transition={{type:'spring', stiffness:400}} className="bottom" style={{ gap: '2rem', display: "flex", margin: "5rem 0rem" }}>
-        <div className="left mobile" style={{  backgroundImage: 'linear-gradient(330deg, #ffe596, #ffbf00)', flex: 1, padding: '23px', display: 'flex', height: '60vh', gap: '2rem' }}>
+      <div  className="bottom" style={{ gap: '2rem', display: "flex", margin: "5rem 0rem" }}>
+        <motion.div initial={{x:-260}} whileInView={{x:0}} transition={{type:'spring', stiffness:400}} className="left mobile" style={{  backgroundImage: 'linear-gradient(330deg, #ffe596, #ffbf00)', flex: 1, padding: '23px', display: 'flex', height: '60vh', gap: '2rem' }}>
 
           <div className='fluid-text' style={{  display: 'flex', flexDirection: 'column', gap: '23px' }}>
             <span className='inside-text' style={{ color: 'black', fontWeight: 'bold',  }}>Calculator</span>
@@ -51,8 +51,8 @@ const Portfolio = () => {
 
           <img className='p-img ' src={calculator} style={{  display: 'block', margin: 'auto', borderRadius: "23px" }} alt="" />
 
-        </div>
-        <div className="right" style={{  backgroundImage: "linear-gradient(311deg, #766ced, #413ad6)", flex: 1, padding: '23px', height: '50vh', display: 'flex', flexDirection: 'column', gap: '2rem' }}>
+        </motion.div>
+        <motion.div initial={{x:260}} whileInView={{x:0}} transition={{type:'spring', stiffness:400}} className="right" style={{  backgroundImage: "linear-gradient(311deg, #766ced, #413ad6)", flex: 1, padding: '23px', height: '50vh', display: 'flex', flexDirection: 'column', gap: '2rem' }}>
 
           <div className='fluid-text' style={{  display: 'flex', flexDirection: 'column', gap: '23px' }}>
             <span className='inside-text' style={{ color: 'black', fontWeight: 'bold',  }}>iNotebook</span>
@@ -61,8 +61,8 @@ const Portfolio = () => {
 
           <img className='t-img' src={fb} style={{ }} alt="" />
 
-        </div>
-      </motion.div>
+        </motion.div>
+      </div>
 
 
     </div>
