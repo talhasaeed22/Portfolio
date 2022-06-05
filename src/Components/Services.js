@@ -18,7 +18,7 @@ const Services = () => {
       <div className="s-left" style={{display:'flex', flex:1, flexDirection:'column', gap: '1rem'}}>
         <span className='p-heading' style={{ color: mode==='light'? '#242D49':'white', fontWeight: 'bold',  }}>My Services</span>
         <span className='p-heading' style={{ color: '#FCA61F', fontWeight: 'bold',  }}>What I Do</span>
-        <span style={{ fontWeight: '100', fontSize: '14px', color: mode==='light'? '#788097':'white', marginBottom: '10px' }}>I Create Amazing Frontend React Applciations. I have also some experience in creating mobile application using React Native. I can manage to make and application using MERN Stack</span>
+        <span style={{ fontWeight: '100', fontSize: '14px', color: mode==='light'? '#788097':'white', marginBottom: '10px' }}>I Create Amazing Frontend React Applciations. I have also some experience in creating mobile application using React Native. I can manage to make an application using MERN Stack</span>
         <a href={CV} download><motion.button whileHover={{scale:1.5}} transition={{type:'spring', stiffness:'500'}} className="button" style={{width:'8rem', height:'2rem'}}>View CV</motion.button></a>
         <div className="blur" style={{backgrounColor:'#ABF1FF94'}}></div>
       </div>
