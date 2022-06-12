@@ -55,7 +55,7 @@ const Portfolio = () => {
         <motion.div initial={{x:260}} whileInView={{x:0}} transition={{type:'spring', stiffness:400}} className="right" style={{  backgroundImage: "linear-gradient(311deg, #766ced, #413ad6)", flex: 1, padding: '23px', height: '50vh', display: 'flex', flexDirection: 'column', gap: '2rem' }}>
 
           <div className='fluid-text' style={{  display: 'flex', flexDirection: 'column', gap: '23px' }}>
-            <span className='inside-text' style={{ color: 'black', fontWeight: 'bold',  }}>iNotebook</span>
+            <span className='inside-text' style={{ color: 'black', fontWeight: 'bold',  }}>Facebook</span>
             <span style={{color:'white' }} > Frontend of a social media app using ReactJS. This is a Clone of Facebook </span>
           </div>
 
