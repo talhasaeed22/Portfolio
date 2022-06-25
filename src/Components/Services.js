@@ -4,7 +4,7 @@ import Card from './Card'
 import './Services.css'
 import web from '../Images/webdev.jpg'
 import mobile from '../Images/mobile.png'
-import CV from '../Components/Talha Saeed Resume.pdf'
+import CV from '../Components/Muhammad-Talha-Saeed-resume.pdf'
 import {motion} from 'framer-motion'
 
 
