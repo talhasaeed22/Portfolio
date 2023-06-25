@@ -50,13 +50,13 @@ const Contact = () => {
           <motion.a id='c-icons' transition={{ease:'easeInOut', duration:0.5}} whileHover={{scale:1.5, rotate:360, }} rel="noreferrer" target='_blank' href="https://www.facebook.com/talha.saeed.1023" className=" text-reset">
             <i style={{ color: '#FCA61F',}} className="fab fa-facebook-f"></i>
           </motion.a>
-          <motion.a id='c-icons' transition={{ease:'easeInOut', duration:0.5}} whileHover={{scale:1.5, rotate:360, }}  rel="noreferrer" target='_blank' href="https://twitter.com/?lang=en" className="me-4 text-reset">
+          {/* <motion.a id='c-icons' transition={{ease:'easeInOut', duration:0.5}} whileHover={{scale:1.5, rotate:360, }}  rel="noreferrer" target='_blank' href="https://twitter.com/?lang=en" className="me-4 text-reset">
             <i style={{ color: '#FCA61F',}} className="fab fa-twitter"></i>
-          </motion.a>
+          </motion.a> */}
           <motion.a id='c-icons' transition={{ease:'easeInOut', duration:0.5}} whileHover={{scale:1.5, rotate:360, }}  rel="noreferrer" target='_blank' href="https://www.instagram.com/talha_saeed2.2/" className=" text-reset">
             <i style={{ color: '#FCA61F',}} className="fab fa-instagram"></i>
           </motion.a>
-          <motion.a id='c-icons'  transition={{ease:'easeInOut', duration:0.5}} whileHover={{scale:1.5, rotate:360, }} rel="noreferrer" target='_blank' href="https://www.linkedin.com/login" className=" text-reset">
+          <motion.a id='c-icons'  transition={{ease:'easeInOut', duration:0.5}} whileHover={{scale:1.5, rotate:360, }} rel="noreferrer" target='_blank' href="https://www.linkedin.com/in/muhammad-talha-saeed-8a342b235/" className=" text-reset">
             <i style={{ color: '#FCA61F',}} className="fab fa-linkedin"></i>
           </motion.a>
           <motion.a id='c-icons' transition={{ease:'easeInOut', duration:0.5}} whileHover={{scale:1.5, rotate:360, }} rel="noreferrer" target='_blank' href="https://github.com/talhasaeed22" className=" text-reset">

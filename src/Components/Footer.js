@@ -16,16 +16,16 @@ const Footer = () => {
           <a rel="noreferrer" target='_blank' href="https://www.facebook.com/talha.saeed.1023" >
             <i  style={{ color: 'white',  }} className="fab fa-facebook-f"></i>
           </a>
-          <a rel="noreferrer" target='_blank' href="https://twitter.com/?lang=en" >
+          {/* <a rel="noreferrer" target='_blank' href="https://twitter.com/?lang=en" >
             <i  style={{ color: 'white',  }} className="fab fa-twitter"></i>
-          </a>
-          <a rel="noreferrer" target='_blank' href="https://support.google.com/answer/2451065?hl=en" >
+          </a> */}
+          {/* <a rel="noreferrer" target='_blank' href="https://support.google.com/answer/2451065?hl=en" >
             <i  style={{ color: 'white',  }} className="fab fa-google"></i>
-          </a>
+          </a> */}
           <a rel="noreferrer" target='_blank' href="https://www.instagram.com/talha_saeed2.2/" >
             <i  style={{ color: 'white',  }} className="fab fa-instagram"></i>
           </a>
-          <a rel="noreferrer" target='_blank' href="https://www.linkedin.com/login" >
+          <a rel="noreferrer" target='_blank' href="https://www.linkedin.com/in/muhammad-talha-saeed-8a342b235/" >
             <i  style={{ color: 'white',  }} className="fab fa-linkedin"></i>
           </a>
           <a rel="noreferrer" target='_blank' href="https://github.com/talhasaeed22" >

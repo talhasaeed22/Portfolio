@@ -56,13 +56,13 @@ const Home = () => {
           <motion.a transition={{ ease: 'easeInOut', duration: 0.5 }} whileHover={{ scale: 1.5, rotate: 360, }} rel="noreferrer" target='_blank' href="https://www.facebook.com/talha.saeed.1023" className=" text-reset">
             <i style={{ color: '#FCA61F', }} className="fab fa-facebook-f"></i>
           </motion.a>
-          <motion.a transition={{ ease: 'easeInOut', duration: 0.5 }} whileHover={{ scale: 1.5, rotate: 360, }} rel="noreferrer" target='_blank' href="https://twitter.com/?lang=en" className="me-4 text-reset">
+          {/* <motion.a transition={{ ease: 'easeInOut', duration: 0.5 }} whileHover={{ scale: 1.5, rotate: 360, }} rel="noreferrer" target='_blank' href="https://twitter.com/?lang=en" className="me-4 text-reset">
             <i style={{ color: '#FCA61F', }} className="fab fa-twitter"></i>
-          </motion.a>
+          </motion.a> */}
           <motion.a transition={{ ease: 'easeInOut', duration: 0.5 }} whileHover={{ scale: 1.5, rotate: 360, }} rel="noreferrer" target='_blank' href="https://www.instagram.com/talha_saeed2.2/" className=" text-reset">
             <i style={{ color: '#FCA61F', }} className="fab fa-instagram"></i>
           </motion.a>
-          <motion.a transition={{ ease: 'easeInOut', duration: 0.5 }} whileHover={{ scale: 1.5, rotate: 360, }} rel="noreferrer" target='_blank' href="https://www.linkedin.com/login" className=" text-reset">
+          <motion.a transition={{ ease: 'easeInOut', duration: 0.5 }} whileHover={{ scale: 1.5, rotate: 360, }} rel="noreferrer" target='_blank' href="https://www.linkedin.com/in/muhammad-talha-saeed-8a342b235/" className=" text-reset">
             <i style={{ color: '#FCA61F', }} className="fab fa-linkedin"></i>
           </motion.a>
           <motion.a transition={{ ease: 'easeInOut', duration: 0.5 }} whileHover={{ scale: 1.5, rotate: 360, }} rel="noreferrer" target='_blank' href="https://github.com/talhasaeed22" className=" text-reset">
@@ -72,7 +72,7 @@ const Home = () => {
       </div>
       <div className="h-right" style={{ flex: 1, }}>
         <div>
-          <motion.img id='glassEmoji' initial={{ left: '-36%' }} whileInView={{ left: 0 }} transition={transition} style={{ width: '120px', height: '120px', position: "relative" }} src={mode === 'dark' ? glassemojidark : glassemoji} alt="" />
+          <motion.img id='glassEmoji' initial={{  height: '70px', width:'70px' }} whileInView={{  height: '120px', width:'120px' }} transition={{ ease: 'easeInOut', duration: 0.5}} style={{ position: "relative" }} src={mode === 'dark' ? glassemojidark : glassemoji} alt="" />
         </div>
         <div id='img-fluid' style={{ position: 'relative', top: '-12%', }}>
           <img src={rightImage} alt='mine' />
